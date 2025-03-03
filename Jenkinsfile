@@ -1,9 +1,5 @@
 pipeline {
-    agent { label 'windows' } // Runs on a Windows agent
-
-    environment {
-        TEMP_DIR = 'C:\\temp' // Define an environment variable
-    }
+    agent any
 
     stages {
         stage('Checkout') {
